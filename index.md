@@ -68,6 +68,24 @@ Checks if the player is donator
 
 returns bool
 
+```lua
+GetSanity()
+```
+
+Returns the amount of sanity for the player
+
+```lua
+GetMood()
+```
+
+Returns the mood of the player.
+
+```lua
+SetMood(int)
+```
+
+Sets the mood of the player followed by the id of the mood.
+
 ## Functions
 
 ![](https://files.facepunch.com/wiki/files/19952/8d7b58d7428c9c6.png)
@@ -111,6 +129,45 @@ ix.event.StopSoundGlobal(sound)
 Stops a sound globally ( every client )
 
 ```lua
+ix.intro:Start(ply)
+```
+
+Plays the map intro for the player
+
+```lua
+ix.quiz.GetQuestions()
+```
+
+Returns all questions on the quiz menu.
+
+```lua
+ix.quiz.GetQuestion(id)
+```
+
+returns the table of information for the specific question
+
+```lua
+ix.quiz.GetMessage(id)
+```
+
+Returns the message of the specified question.
+
+```lua
+ix.quiz.GetOptions()
+```
+
+Returns all options on the specific Question.
+
+```lua
+ix.quiz.GetCorrectAnswer(id)
+```
+
+Returns the correct answer on the specified question.
+
+
+
+
+
 
 
 
