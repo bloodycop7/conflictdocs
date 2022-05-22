@@ -1,37 +1,119 @@
-## Welcome to GitHub Pages
+# Conflict Studios Developer Documentation
 
-You can use the [editor on GitHub](https://github.com/iamSkay2752/conflictdocs/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Player Meta Tables
+![](https://files.facepunch.com/wiki/files/19952/8d7b58d999caa0e.png)
+```lua
+IsCitizen() -- SHARED
+```
+Checks if the player is Citizen
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Returns bool
 
-### Markdown
+```lua
+IsLoyalist() -- SHARED
+```
+Checks if the player is UUA
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+returns bool
 
-```markdown
-Syntax highlighted code block
+```lua
+IsCombine() -- SHARED
+```
+Checks if the player is Combine
 
-# Header 1
-## Header 2
-### Header 3
+returns bool
 
-- Bulleted
-- List
+```lua
+IsCA() -- SHARED
+```
+Checks if the player is City Administrator
 
-1. Numbered
-2. List
+returns bool
 
-**Bold** and _Italic_ and `Code` text
+```lua
+IsDispatch() -- SHARED
+```
+Checks if the player is Dispatch
 
-[Link](url) and ![Image](src)
+returns bool
+
+```lua
+IsCombineCommand() -- SHARED
+```
+Checks if the player is a Combine Command
+
+returns bool
+
+```lua
+IsRunning() -- SHARED
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Checks if the player is running
 
-### Jekyll Themes
+returns bool
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iamSkay2752/conflictdocs/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```lua
+IsDeveloper() -- SHARED
+```
 
-### Support or Contact
+Checks if the player is a developer
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+returns bool
+
+```lua
+IsDonator() -- SHARED
+```
+
+Checks if the player is donator
+
+returns bool
+
+## Functions
+
+![](https://files.facepunch.com/wiki/files/19952/8d7b58d7428c9c6.png)
+
+```lua
+ix.event.PlaySound(ply, sndtable)
+```
+
+sndtable contents:
+
+```lua
+sound -- string
+db -- number
+pitch -- number
+volume -- number
+delay -- bool
+```
+
+Plays a sound to a specific Player
+
+```lua
+ix.event.PlaySoundGlobal(sndtable)
+```
+
+sndtable contents:
+
+```lua
+sound -- string
+db -- number
+pitch -- number
+volume -- number
+delay -- bool
+```
+
+Plays a sound globally ( every client )
+
+```lua
+ix.event.StopSoundGlobal(sound)
+```
+
+Stops a sound globally ( every client )
+
+```lua
+
+
+
+
+
+
